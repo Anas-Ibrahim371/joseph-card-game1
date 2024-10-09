@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Joseph's Card Game</title>
+    <title>Your Video Title</title>
 </head>
 <body>
-    <video controls autoplay muted>
-        <source src="C:\Users\DELL\Videos\Captures\Card game.mp4" type="video/mp4">
-    </video>
+    <div id="vimeo-player"></div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        var player = new Vimeo.Player('vimeo-player');
+        player.src('https://player.vimeo.com/video/1017895560'); // Replace 123456789 with your Vimeo video ID
+        player.play();
+    </script>
 </body>
 </html>
